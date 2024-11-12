@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AskPupkin</a>
+        
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Ask </button>
+          </form>
+
+        <div class="d-flex gap-1">
+          <img src="kkk.jpg" alt="Avatar" class="img-thumbnail">
+          <div>
+            <div>
+              Dr. Pepper
+            </div> 
+            <a href="#">Settings</a>
+            <a href="#">log out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-3">
+      <div class="d-flex gap-3 align-items-center mb-4">
+          <h1>New Questions</h1>
+          <a href="#">Hot Questions</a>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-9">
+          <div class="d-flex flex-column gap-3">
+            <div class="question w-100 " style="width: 18rem;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="border mb-1" style="height: 100px;">
+                      <img src="#" alt="Avatar" class="img-fluid">
+                    </div>
+                    <input class="form-control" type="number" value="5" placeholder="Default input">
+                  </div>
+                  <div class="col-9">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+          
+                    <div class="d-flex gap-5">
+                      <div class="d-flex gap-2">
+          
+                        Tags:
+                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Another link</a>
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <hr class="solid">
+          
+            <div class="card w-100" style="width: 18rem;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="border mb-1" style="height: 100px;">
+                      <img src="#" alt="Avatar" class="img-fluid">
+                    </div>
+                    <input class="form-control" type="number" value="5" placeholder="Default input">
+                  </div>
+                  <div class="col-9">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+          
+                    <div class="text d-flex gap-2 ">
+                      <input type="checkbox">
+                      <p style="margin: 0;"> Correct! </p>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100" style="width: 18rem;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="border mb-1" style="height: 100px;">
+                      <img src="#" alt="Avatar" class="img-fluid">
+                    </div>
+                    <input class="form-control" type="number" value="5" placeholder="Default input">
+                  </div>
+                  <div class="col-9">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+          
+                    <div class="text d-flex gap-2 ">
+                      <input type="checkbox">
+                      <p style="margin: 0;"> Correct! </p>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="solid">
+
+
+          </div>    
+        </div> 
+        
+        <div class="col">
+            <section class="mb-3">
+                <h2> Popular Tags </h2>
+                    <div>
+                        <span class="badge badge-pill bg-primary">Main</span>
+                        <span class="badge badge-pill bg-secondary">Secondary</span>
+                        <span class="badge badge-pill bg-success">Technopark</span>
+                        <span class="badge badge-pill bg-danger">Puppies</span>
+                        <span class="badge badge-pill bg-warning">Simple</span>
+                        <span class="badge badge-pill bg-info">Dimple</span>
+                        <span class="badge badge-pill bg-dark">BTMSU</span>
+                    </div>
+            </section>
+            <section>
+                <h2>Best Members</h2>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                            <li class="list-group-item"><a href="#">Member</a></li>
+                          </ul>
+                    </div>
+            </section>
+        </div> 
+
+        <div class="form-group">
+          <textarea class="form-control" id="FormControlTextarea" rows="5" placeholder="Enter your answer here"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success">Answer</button>
+    </div>
+
+    </main>
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>
