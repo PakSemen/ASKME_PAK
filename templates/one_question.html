@@ -1,0 +1,51 @@
+{% extends 'layouts/base_pag.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div class="col-9">
+          <div class="d-flex flex-column gap-3">
+            <div class="question w-100 " style="width: 18rem;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="border mb-1" style="height: 100px;">
+                      <img src="#" alt="Avatar" class="img-fluid">
+                    </div>
+                    <input class="form-control" type="number" value="5" placeholder="Default input">
+                  </div>
+                  <div class="col-9">
+                    <a href="#" class="card-title">Название карточки</a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+
+                    <div class="d-flex gap-5">
+                      <div class="d-flex gap-2">
+
+                        Tags:
+                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Another link</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <hr class="solid">
+
+            {% include 'layouts/answer.html'%}
+
+            <hr class="solid">
+
+            <div class="form-group">
+              <textarea class="form-control" id="FormControlTextarea" rows="5" placeholder="Enter your answer here"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success" style="width: 20%">Answer</button>
+          </div>
+        </div>
+
+{% endblock %}

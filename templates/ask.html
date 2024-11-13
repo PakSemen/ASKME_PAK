@@ -1,0 +1,62 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+                <div class="d-flex gap-3 align-items-center mb-4">
+                    <h1>New Question</h1>
+                </div>
+                <div class="col-9">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="question w-100" style="width: 18rem;">
+                            <div class="title">
+                                <div class="row align-items-center">
+                                    <div class="Name col-1 ">
+                                        <p class="text-center fs-5">Title</p>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="InputTitle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text">
+                                <div class="row ">
+                                    <div class="Name col-1 mx-auto">
+                                        <p class="text-center fs-5">Text</p>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="mb-3">
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="FormControlTextarea" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tags">
+                                <div class="row align-items-center">
+                                    <div class="Name col-1 mx-auto">
+                                        <p class="text-center fs-5">Tags</p>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="mb-3">
+                                            <input type="tags" class="form-control" id="InputTags">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button">
+                                <div class="col-12 offset-md-1">
+                                    <button type="submit" class="btn btn-success">ASK!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+{% endblock %}
