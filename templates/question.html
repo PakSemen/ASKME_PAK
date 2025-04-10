@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+    <articles class="d-flex gap-3 flex-column">
+
+        <div class="p-3 mt-3" style="background-color: #8AAAA5;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2">
+                        <div style="height: 100px;" class="border mb-2 w-100">
+                            <img src="{% static "/img/frog.jpeg" %}" alt="img" class="img-fluid">
+                        </div>
+
+                        <div>
+                            <input type="number" class="form-control" value="5" >
+                        </div>
+
+                    </div>
+                    <div class="col d-grid gap-2">
+                        <h3 class="card-title">
+                            <a href="{% url "question" question.id %}"> {{ question.title }}</a>
+                        </h3>
+                        <p class="card-text"> {{question.text}} </p>
+                        <div class="row">
+                            <div class="col">
+                                <span>Tags</span>
+                                <span class="badge rounded-pill text-bg-primary">Primary</span>
+                                <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-1">
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2">
+                        <div style="height: 100px;" class="border mb-2 w-100">
+                            <img src="{% static "/img/frog.jpeg" %}" alt="img" class="img-fluid">
+                        </div>
+
+                        <div>
+                            <input type="number" class="form-control" value="5">
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <h4 class="card-title">
+                            <a href="{% url "question" question.id %}"> {{ question.title }}</a>
+                        </h4>
+                        <p class="card-text"> {{question.text}} </p>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Correct!</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-1">
+
+        <div class="mb-3">
+            <textarea class="form-control" id="disabledTextInput" rows ="5" placeholder="Disabled input"></textarea>
+        </div>
+    </articles>
+{% endblock %}

@@ -1,19 +1,20 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ask Me</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <title>Askme</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
-    <body style="background-color: #8FA2CA;">
+    <body style="background-color: #E2EEEC;">
         <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
             <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <img width="40px" src="source/logo.png" class="img-fluid">
-                    Ask Me
+                    <img width="40px" src="static/img/logo.png" class="img-fluid">
+                    Askme
                 </a>
 
                 <form class="d-flex" role="search">
@@ -40,20 +41,19 @@
         <main class="container mt-2 flex-grow">
             <div class="row">
                 <section class="col vh-100%">
-
+                {% block content %}
+                {% endblock %}
                 </section>
                 <aside class="col-3" style="background-color: #E4E8F4;">
                     <section class="mb-3">
                         <h3>Popular Tags</h3>
                         <div>
-                            <span class="badge rounded-pill text-bg-primary">Primary</span>
-                            <span class="badge rounded-pill text-bg-secondary">Secondary</span>
-                            <span class="badge rounded-pill text-bg-success">Success</span>
-                            <span class="badge rounded-pill text-bg-danger">Danger</span>
-                            <span class="badge rounded-pill text-bg-warning">Warning</span>
-                            <span class="badge rounded-pill text-bg-info">Info</span>
-                            <span class="badge rounded-pill text-bg-light">Light</span>
-                            <span class="badge rounded-pill text-bg-dark">Dark</span>
+                            <a href="#" class="d-block">Python</a>
+                            <a href="#" class="d-block">G0</a>
+                            <a href="#" class="d-block">C++</a>
+                            <a href="#" class="d-block">Rust</a>
+                            <a href="#" class="d-block">Java</a>
+                            <a href="#" class="d-block">JavaScript(aka Java)</a>
                         </div>
                     </section>
 

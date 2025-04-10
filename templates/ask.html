@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="d-grid gap-3">
+        <div class="d-flex align-items-center gap-2">
+            <h1>New Question</h1>
+        </div>
+
+        <div class="row ">
+            <section class="col-2">
+                <h4>Title</h4>
+            </section>
+            <section class="col-9">
+                <div class="mb-3">
+                    <input type="title" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp">
+                    <div id="titleHelp" class="form-text">Come up with a creative title.</div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="col-2">
+                <h4>Text</h4>
+            </section>
+            <section class="col-9">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="col-2">
+                <h4>Tags</h4>
+            </section>
+            <section class="col-9">
+                <input type="tags" class="form-control" id="exampleInputTags" aria-describedby="tagsHelp">
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="col-2">
+            </section>
+            <section class="col-9">
+                <button type="button" class="btn btn-dark">Ask!</button>
+            </section>
+        </div>
+    </div>
+{% endblock %}

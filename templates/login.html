@@ -1,0 +1,46 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="d-grid gap-3">
+        <h1>Log In</h1>
+
+        <div class="d-flex">
+            <div class="col-2">
+                <h4>Login</h4>
+            </div>
+
+            <div class="col-4">
+                <input type="login" class="form-control" id="exampleInputLogin1" aria-describedby="LoginHelp">
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="col-2">
+                <h4>Password</h4>
+            </div>
+
+            <div class="col-4">
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="col-2">
+            </div>
+
+            <div class="col-4">
+                <button type="submit" class="btn btn-dark">Log In</button>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="col-2">
+            </div>
+
+            <div class="col-4">
+                <a href="#">create new account</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
